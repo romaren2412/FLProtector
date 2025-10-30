@@ -1,0 +1,32 @@
+# SPDX-FileCopyrightText: 2025, Roi Martínez Enríquez
+# SPDX-License-Identifier: Apache-2.0
+
+dataset:
+  name: digitfive
+  collection: d5
+  data_type: mnistm
+  extra_data_type: mnist
+  batch_size: 64
+  test_batch_size: 256
+  path_to_models_zero: models/d5_net_zeros.pt
+  root: data/d5/
+  nbyz: 1
+  attack_type: none
+optimizer:
+  name: adam
+  lr: 0.001
+algorithm:
+  name: flprotector
+  num_clients: 5
+  num_epochs: 20
+  eval_interval: 5
+  fl_freq: 5
+  epoch_encoder: 4
+  ablation: baseline
+runtime:
+  gpu: 0
+  output_root: outputs
+  timestamp: true
+  home_path: ""
+  run_name: digitfive-flprotector
+  seed: 42

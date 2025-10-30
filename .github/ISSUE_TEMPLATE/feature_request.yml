@@ -1,0 +1,42 @@
+# SPDX-FileCopyrightText: 2025, Roi Martínez Enríquez
+# SPDX-License-Identifier: Apache-2.0
+
+name: Feature request
+description: Suggest a new feature or improvement for FLProtector
+title: "[feature]: "
+labels: ["enhancement", "discussion-needed"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting an improvement!  
+        Please describe your idea clearly and explain its motivation.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Feature summary
+      description: Provide a short summary of your idea.
+      placeholder: "Add support for..."
+    validations:
+      required: true
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation / problem statement
+      description: Explain why this feature is useful or what problem it solves.
+      placeholder: "Currently, FLProtector lacks..."
+    validations:
+      required: true
+  - type: textarea
+    id: implementation
+    attributes:
+      label: Possible implementation
+      description: Optionally, describe how it could be implemented.
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - Low
+        - Medium
+        - High

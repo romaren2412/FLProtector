@@ -1,0 +1,28 @@
+# SPDX-FileCopyrightText: 2025, Roi Martínez Enríquez
+# SPDX-License-Identifier: Apache-2.0
+
+name: Question / Usage help
+description: Ask a question about FLProtector usage, configuration, or results
+title: "[question]: "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please use this form for **questions or clarifications** about FLProtector.  
+        For bug reports or feature requests, choose the appropriate template instead.
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+      description: Clearly state your question or doubt.
+      placeholder: "How does the autoencoder threshold affect local updates?"
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Optionally, describe what you tried, your setup, or related observations.
+  - type: input
+    id: version

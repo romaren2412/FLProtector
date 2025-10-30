@@ -1,0 +1,13 @@
+# SPDX-FileCopyrightText: 2025, Roi Martínez Enríquez
+# SPDX-License-Identifier: Apache-2.0
+
+cff-version: 1.2.0
+title: "FLProtector: Out-of-Distribution Detection and Adaptive Interpolation for Personalized Federated Learning"
+message: "If you use this software, please cite it as below."
+type: software
+authors:
+  - family-names: "Martínez"
+    given-names: "Roi"
+license: Apache-2.0
+repository-code: "https://github.com/romaren2412/PFL_UDHAT"
+date-released: "2025-10-29"

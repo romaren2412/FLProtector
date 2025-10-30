@@ -1,0 +1,11 @@
+# SPDX-FileCopyrightText: 2025, Roi Martínez Enríquez
+# SPDX-License-Identifier: Apache-2.0
+
+blank_issues_enabled: false
+contact_links:
+  - name: 📚 Documentation
+    url: https://github.com/romaren2412/FLProtector#readme
+    about: Read the official documentation before opening an issue.
+  - name: 💬 Discussions
+    url: https://github.com/romaren2412/FLProtector/discussions
+    about: For general questions or research talks, please use Discussions.

@@ -1,0 +1,78 @@
+# SPDX-FileCopyrightText: 2025, Roi Martínez Enríquez
+# SPDX-License-Identifier: Apache-2.0
+
+name: Bug report
+description: Report a reproducible problem or malfunction in FLProtector
+title: "[bug]: "
+labels: ["bug", "triage-needed"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug!  
+        Please fill out all required fields to help us reproduce and fix the issue.
+  - type: input
+    id: version
+    attributes:
+      label: FLProtector version
+      placeholder: "v0.4.1"
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - Linux
+        - macOS
+        - Windows
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: python
+    attributes:
+      label: Python version
+      placeholder: "3.10.14"
+    validations:
+      required: true
+  - type: checkboxes
+    id: hardware
+    attributes:
+      label: Hardware / acceleration
+      options:
+        - label: CPU only
+        - label: CUDA
+        - label: MPS (Apple)
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: Please provide minimal steps or code snippets to reproduce the issue.
+      placeholder: |
+        1. Run ...
+        2. Observe ...
+        3. Error message: ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: Describe what you expected to happen.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior / logs
+      description: Paste error tracebacks or logs if available.
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context or screenshots
+      description: Add any extra information that may help us understand the problem.
+

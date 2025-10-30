@@ -1,0 +1,31 @@
+# SPDX-FileCopyrightText: 2025, Roi Martínez Enríquez
+# SPDX-License-Identifier: Apache-2.0
+
+version = 1
+
+# Default license for source code
+[[annotations]]
+path = ["src/**", "utils/**", "scripts/**", "models/**", "configs/**"]
+SPDX-FileCopyrightText = "2025, Roi Martínez Enríquez"
+SPDX-License-Identifier = "Apache-2.0"
+
+# Derived from FedProx (MIT)
+[[annotations]]
+path = ["src/pfl_benchmark_algorithms/fedprox.py"]
+SPDX-FileCopyrightText = "2020, Tian Li et al.; 2025, Roi Martínez Enríquez"
+SPDX-License-Identifier = "MIT"
+
+# Derived from SCAFFOLD (MIT)
+[[annotations]]
+path = ["src/pfl_benchmark_algorithms/scaffold.py"]
+SPDX-FileCopyrightText = "2021, ki-ljl; 2025, Roi Martínez Enríquez"
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = ["Memoria-TFM.pdf", "README.md"]
+SPDX-FileCopyrightText = "2025, Roi Martínez Enríquez"
+SPDX-License-Identifier = "CC-BY-NC-4.0"
+
+# Licenses directory with SPDX texts
+[[licenses]]
+path = "LICENSES"

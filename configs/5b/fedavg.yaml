@@ -1,0 +1,27 @@
+# SPDX-FileCopyrightText: 2025, Roi Martínez Enríquez
+# SPDX-License-Identifier: Apache-2.0
+
+dataset:
+  name: 5b
+  collection: 5b
+  batch_size: 64
+  test_batch_size: 256
+  path_to_models_zero: models/d5_net_zeros.pt
+  root: data/d5/
+optimizer:
+  name: adam
+  lr: 0.001
+algorithm:
+  name: fedavg
+  num_clients: 5
+  num_epochs: 20
+  eval_interval: 5
+  delta_personalization: false
+  fl_freq: 5
+runtime:
+  gpu: 0
+  output_root: outputs
+  timestamp: true
+  home_path: ""
+  run_name: 5b-fedavg
+  seed: 42

@@ -1,0 +1,9 @@
+# SPDX-FileCopyrightText: 2025, Roi Martínez Enríquez
+# SPDX-License-Identifier: Apache-2.0
+
+FLProtector — NOTICE
+Third-party components:
+- PyTorch, torchvision (BSD-style)
+- NumPy, SciPy, scikit-learn (BSD-style/BSD-3-Clause)
+- Typer (MIT), PyYAML (MIT)
+Datasets are not redistributed; see DATA_LICENSES.md.
